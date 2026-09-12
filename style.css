@@ -23,3 +23,17 @@ body {
 .pixel {
     background-color: white;
 }
+
+.container {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+}
+
+button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    padding: 5px;
+}
