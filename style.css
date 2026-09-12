@@ -7,15 +7,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
-
     background-color: rgb(100, 98, 98);
+    padding: 2rem;
 }
 
 .canvas {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
-
+    cursor: crosshair;
 }
 
+.pixel {
+    background-color: white;
+}
