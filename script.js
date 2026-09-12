@@ -8,8 +8,8 @@ body.appendChild(canvasContainer)
 const colorPicker = document.querySelector("#color")
 
 function createCanvas(side = 16) {
-    if (side > 100 || side <= 0) {
-        throw new Error("Input must be less than 100 and more than 0")
+    if (!Number.isInteger(parseInt(side)) || (side > 100 || side <= 0)) {
+        throw new Error("Input must be an integer less than 100 and more than 0")
     }
 
     if (canvasContainer.hasChildNodes()) {
@@ -39,7 +39,7 @@ function createCanvas(side = 16) {
     draw()
 }
 
-createCanvas(10)
+createCanvas(15)
 
 function draw() {
 
@@ -63,3 +63,11 @@ const resetBtn = document.querySelector("#reset")
 resetBtn.addEventListener("click", () => {
     reset()
 })
+
+const changeSizeBtn = document.querySelector("#change-size")
+
+changeSizeBtn.addEventListener("click", () => {
+    const newSide = prompt("Enter side length (e.g. 64):")
+    createCanvas(newSide)
+})
+
