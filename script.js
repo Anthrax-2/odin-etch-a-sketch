@@ -50,3 +50,16 @@ function draw() {
         })
     })
 }
+
+function reset() {
+    const canvasPixels = document.querySelectorAll(".pixel")
+    canvasPixels.forEach((canvasPixel) => {
+        canvasPixel.style.backgroundColor = "white"
+    })
+}
+
+const resetBtn = document.querySelector("#reset")
+
+resetBtn.addEventListener("click", () => {
+    reset()
+})
