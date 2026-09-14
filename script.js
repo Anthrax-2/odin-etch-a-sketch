@@ -39,7 +39,7 @@ function createCanvas(side = 16) {
     draw()
 }
 
-createCanvas(15)
+createCanvas(16)
 
 function draw() {
 
