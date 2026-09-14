@@ -7,7 +7,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     height: 100vh;
     background-color: rgb(100, 98, 98);
     padding: 2rem;
@@ -24,9 +23,10 @@ body {
     background-color: white;
 }
 
-.container {
+.options-container {
     display: flex;
-    gap: 8rem;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     width: 550px;
